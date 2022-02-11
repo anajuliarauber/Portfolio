@@ -1,0 +1,256 @@
+/* Global ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-1: #efefef;
+    --background-2: #a9a9a9;
+    --background-3: #FAF9F6;
+    --details-1:#ff3b3ec0;
+    --details-2:#caebf2;
+    --text-1: #343434;
+    --text-2:#fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-1);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Header ========================= */
+.nav-top{
+    height: 80px;
+    background-color: var(--details-1);
+    color: var(--text-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 60px;
+}
+
+.nav-top ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.nav-top a{
+    text-decoration: none;
+    color: var(--text-2);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.nav-top a:hover{
+    font-weight: 400;
+}
+
+.space{
+    height: 170px;
+    background-color: var(--details-1);
+    width: 100vw;
+}
+/* Main ============================*/
+
+main{
+    display: flex;
+}
+
+.left-section{
+    width: 400px;
+}
+
+.right-section{
+    margin-top: -56px;
+}
+
+/* Card ============================*/
+.card{
+    margin:0 40px 40px 60px;
+    border-radius: 10px;
+    background-color: var(--background-3);
+    color: var(--text-1);
+    padding: 30px;
+    box-shadow: 1px 1px 3px var(--background-2);
+}
+/* Profile ========================= */
+
+.profile{
+    margin-top: -160px;
+}
+
+.profile.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile > img{
+    width: 140px;
+    border-radius: 50%;
+    border: 5px solid var(--details-2);
+}
+
+.profile h2{
+    margin-top: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-card{
+    margin-top: 40px;
+}
+
+.nav-card ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100%;    
+}
+
+.nav-card a{
+    text-decoration: none;
+    color: var(--text-1);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height:30px ;
+}
+
+.nav-card a:hover{
+    color: var(--details-1);
+}
+
+.nav-card img{
+    margin-right: 10px;
+}
+
+
+/* Techs ======================*/
+.techs{
+    padding: 30px;
+}
+
+.techs h2{
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.techs ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+}
+
+.techs li{
+    background-color: var(--details-2);
+    width: 110px;
+    height: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Projects ======================*/
+
+.projects{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-section h2{
+    color: var(--text-2);
+    font-weight: 400;
+    margin: 20px 0px 40px 60px;
+}
+
+.project{
+    width: 325px;
+    height: 260px;
+}
+
+.project h3{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.project p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.project img{
+    width: 270px;
+    border: 1px solid var(--details-2);
+    border-radius: 5px;
+}
+
+.project a{
+    text-decoration: none;
+    color: var(--text-1);
+}
+
+.project.card:hover{
+    box-shadow: 3px 3px 9px var(--background-2);
+}
+
+
+/* Responsividade ==========================*/
+
+@media (max-width: 480px){
+
+    .card{
+        padding: 20px ;
+    }
+    .right-section{
+        width: 400px;
+        margin-top: 25px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section h2{
+        color: var(--text-1);
+    }
+}
+
+@media (max-width: 810px) {
+
+    .right-section{
+        width: 400px;
+        margin-top: 25px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section h2{
+        color: var(--text-1);
+    }
+}
+

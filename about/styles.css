@@ -1,0 +1,85 @@
+/* Global ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-1: #efefef;
+    --background-2: #a9a9a9;
+    --background-3: #FAF9F6;
+    --details-1:#ff3b3ec0;
+    --details-2:#caebf2;
+    --text-1: #343434;
+    --text-2:#fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-1);
+    height: 100vh;
+    color: var(--text-1);
+}
+
+/* Header ========================= */
+.nav-top{
+    height: 80px;
+    background-color: var(--details-1);
+    color: var(--text-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 40px;
+}
+
+.nav-top ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.nav-top a{
+    text-decoration: none;
+    color: var(--text-2);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.nav-top a:hover{
+    font-weight: 400;
+}
+
+/* Main ========================*/
+main{
+    margin: 100px 40px ;
+}
+
+main h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+main p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--details-1);
+}
+
+/* Responsividade ================*/
+@media (max-width: 480px){
+    .logo{
+        padding-left: 20px;
+    }
+}

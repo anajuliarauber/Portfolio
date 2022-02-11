@@ -1,0 +1,104 @@
+/* Global ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-1: #efefef;
+    --background-2: #a9a9a9;
+    --background-3: #FAF9F6;
+    --details-1:#ff3b3ec0;
+    --details-2:#caebf2;
+    --text-1: #343434;
+    --text-2:#fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-1);
+    height: 100vh;
+    color: var(--text-1);
+}
+
+/* Header ========================= */
+.nav-top{
+    height: 80px;
+    background-color: var(--details-1);
+    color: var(--text-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 40px;
+}
+
+.nav-top ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.nav-top a{
+    text-decoration: none;
+    color: var(--text-2);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.nav-top a:hover{
+    font-weight: 400;
+}
+
+/* Form ========================*/
+
+form{
+    margin: 50px 100px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input, .input-container select, .input-container textarea, button{
+    width: 300px;
+    height: 30px;
+    font-family:'Poppins', sans-serif ;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--background-3);
+}
+
+.input-container textarea{
+    height: 160px;
+}
+
+button{
+    background-color: var(--details-2);
+}
+
+/* Responsividade ================ */
+@media (max-width: 480px){
+    .logo{
+        padding-left: 20px;
+    }
+
+    form{
+        margin: 50px 20px;
+    }
+
+    .input-container input, .input-container select, .input-container textarea, button{
+        width: 250px;
+    }
+
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Ana Julia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-top">
+            <p class="logo">Contato</p>
+            <ul>
+                <li>
+                    <a href="../index/index.html" rel="next">Portfolio</a>
+                </li>
+                <li>
+                    <a href="../about/about.html" rel="next">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="mailto:anajuliarauber@hotmail.com" method="post" enctype=”multipart/form-data” name=”EmailForm”>
+            <div class="input-container">
+                <label for="subject">Motivo do contato</label>
+                <select name="subject" id="subject" required>
+                    <option>Selecione</option>
+                    <option value="work">Trabalhe comigo</option>
+                    <option value="sugestion">Sugestão</option>
+                    <option value="error">Reportar erro</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Escreva seu nome" title="Campo obrigatório"
+                    required />
+            </div>
+
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escreva seu email" minlength="8"
+                    maxlength="100" title="Campo obrigatório" required />
+            </div>
+
+            <div class="input-container">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="Escreva sua mensagem" title="Campo obrigatório" required>
+                </textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
